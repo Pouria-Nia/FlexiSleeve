@@ -1,0 +1,20 @@
+# Python - compiled files and environments
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# Arduino - temporary build files
+build/
+*.hex
+*.elf
+*.bin
+*.map
+
+# Editor and OS settings
+.DS_Store
+.vscode/
+.idea/
+*.sublime-workspace
