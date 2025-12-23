@@ -1,0 +1,26 @@
+&ACCESS RVP
+&REL 5
+DEF goodSleeve( )
+  
+  MyPosSimon = {POS: X 1765, Y 0, Z 1784, A 0, B 90, C 0}
+  SPEED = 1.0
+  SWI_SPEED = 1.0
+  SimonBool = TRUE
+
+  BAS(#INIlTMOV,0)
+  BAS(#TOOL,13)
+  BAS(#VEL_CP, 0.4)  							; Continous Path velocity (m/s)
+  BAS(#VEL_PTP, 20) 
+  HOME = $POS_ACT	
+  
+  PTP HOME							; Set current position as home position
+  $advance = 1
+  WHILE SimonBool
+      $VEL.CP = SPEED
+      $VEL.ORI1 = SWI_SPEED
+      PTP MyPosSimon c_ptp
+  ENDWHILE
+  
+  
+  PTP HOME
+END
