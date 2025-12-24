@@ -98,6 +98,13 @@ The system features three distinct operation modes, toggleable via an onboard bu
 
 The hardware consists of the wearable unit and the custom end-effector.
 
+### Wearable Unit
+![Sleeve Electronics](assets/Images/03_FlexiSleeve_Sleeve.jpg)
+
+- Integrated ESP32 and MPU6050 on the forearm.
+- Flex sensor array for finger tracking.
+- Haptic vibration motor for force feedback.
+
 ### Custom End-Effector
 ![Gripper Alone](assets/Images/08_FlexiSleeve_Gripper02.jpg)
 
@@ -168,7 +175,7 @@ All media files are located in the `assets` folder:
 - System diagrams
 - Demonstration videos
 
-**FlexiSleeve_Test-No_2.mp4** (Full KUKA Test Video)
+[**FlexiSleeve_Test-No_2.mp4** (Full KUKA Test Video)](assets/Videos/FlexiSleeve_Test-No_2.mp4)
 
 ---
 
